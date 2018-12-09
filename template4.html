@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+</head>
+<body>
+    <!-- en un formulario puedes especificar el tipo de campo (input) -->
+    <!-- action: ¿a dónde se envían los datos del formulario? -->
+    <!-- method: ¿cómo se envían los datos? -->
+    <form action="#" method="GET">
+        <label for="username">Nombre de usuario </label>
+        <input type="text" id="username" placeholder="Ingresa tu nombre de usuario">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Ingresa tu email">
+        <label for="pass">Contraseña</label>
+        <input type="password" id="pass" placeholder="Ingresa tu contraseña">
+        <button type="submit"> Enviar formulario </button>
+    </form>
+
+    <hr>
+
+    <form action="welcome.html">
+        <p>¿Eres mayor de edad?</p>
+        <label for="si"> Si: </label>
+        <input type="radio" id="si" name="mayor_menor" value="Si">
+        <label for="no"> No: </label>
+        <input type="radio" id="no" name="mayor_menor" value="No">
+
+        <label for="forma_pago">Forma de pago</label>
+        <select name="forma_pago" id="forma_pago">
+            <option value="tarjeta">Tarjeta débito/crédito</option>
+            <option value="paypal">Paypal</option>
+            <option value="efectivo">Efectivo</option>
+        </select>
+    </form>
+    
+</body>
+</html>
